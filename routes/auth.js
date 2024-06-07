@@ -21,9 +21,7 @@ router.post('/createuser', [
   let success=false
   const errors = validationResult(req);
   const {name, email, password,confirmPassword}=req.body;
-  if(password!==confirmPassword){
-    return res.status(400).json({success, error:"Password didnt match to Confirm password " });
-  }
+  
   if (!errors.isEmpty()) {
     return res.status(400).json({success, errors: errors.array() });
   }
