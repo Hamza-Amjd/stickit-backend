@@ -84,4 +84,7 @@ router.delete('/deletenote/:id', fetchuser, async (req, res) => {
         res.status(500).send("Internal Server Error");
     }
 })
+
+// ROUTE 5: "/api/notes/chat"
+
 module.exports = router

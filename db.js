@@ -4,7 +4,7 @@ const mongoURI = "mongodb+srv://hamzaamjad:hamzaamjad@cluster0.fc3iuap.mongodb.n
 
 const connectToMongo=()=>{
     mongoose.connect(mongoURI);
-    console.log("connected to mongo");
+    console.log("connected to mongodb");
 }
 
 module.exports = connectToMongo;
